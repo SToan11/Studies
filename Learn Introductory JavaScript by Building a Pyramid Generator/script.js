@@ -56,6 +56,16 @@ Note that when reassigning a variable that has already been declared, you do not
 After your console.log, assign the value "World" to your character variable.
 */
 
+// let character = 'Hello';
+// console.log(character);
+// character = "World";
+
+/*
+Step 6:
+Now log your character variable to the console again. You should see the string "Hello", then the string "World", in the console.
+*/
+
 let character = 'Hello';
 console.log(character);
 character = "World";
+console.log(character);

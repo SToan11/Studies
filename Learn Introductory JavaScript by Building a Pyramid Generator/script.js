@@ -108,9 +108,28 @@ You can still assign a value to an uninitialized variable. Here is an example:
 Assign the string "Test" to your secondCharacter variable below your declaration. Open the console to see how your log has changed.
 */
 
+// let character = 'Hello';
+// console.log(character);
+// character = "World";
+// let secondCharacter;
+// secondCharacter = "Test";
+// console.log(secondCharacter);
+
+/*
+Step 10:
+You can also assign the value of a variable to another variable. For example:
+                let first = "One";
+                let second = "Two";
+                second = first;
+The second variable would now have the value "One".
+To see this in action, change your secondCharacter assignment from "Test" to your character variable.
+Then open the console to see what gets logged.
+*/
+
 let character = 'Hello';
 console.log(character);
 character = "World";
 let secondCharacter;
-secondCharacter = "Test";
+secondCharacter = character;
 console.log(secondCharacter);
+

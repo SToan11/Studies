@@ -126,10 +126,17 @@ To see this in action, change your secondCharacter assignment from "Test" to you
 Then open the console to see what gets logged.
 */
 
-let character = 'Hello';
-console.log(character);
-character = "World";
-let secondCharacter;
-secondCharacter = character;
-console.log(secondCharacter);
+// let character = 'Hello';
+// console.log(character);
+// character = "World";
+// let secondCharacter;
+// secondCharacter = character;
+// console.log(secondCharacter);
 
+/*
+Step 11:
+You are now ready to declare your next variable. Remove both console.log statements, and the character reassignment.
+Also remove your secondCharacter variable, but leave the character initialization unchanged.
+*/
+
+let character = 'Hello';

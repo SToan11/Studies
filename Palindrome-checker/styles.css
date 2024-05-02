@@ -6,11 +6,19 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f4;
+    background-color: #eeeeee;
   }
 
   #container {
     text-align: center;
+    margin-top: -100px; /* Move container up by 100px */
+  }
+
+  .title {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
   }
 
   #text-input {
@@ -36,10 +44,4 @@ body {
     margin-top: 20px;
     font-size: 18px;
   }
-
-  .title {
-    text-align: center;
-    padding: 10px 0;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
+ 

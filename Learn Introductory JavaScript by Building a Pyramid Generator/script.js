@@ -155,7 +155,15 @@ Step 13:
 With the number data type, you can perform mathematical operations, like addition. Try printing count + 1 to the console.
 */
 
+// let character = 'Hello';
+// let count = 8;
+// console.log(count + 1);
+
+/*
+Step 14:
+You can also perform subtraction (-), multiplication (*), and division (/). 
+Feel free to experiment with the operators and numbers in your console.log. When you are ready to move on, remove the console.log.
+*/
+
 let character = 'Hello';
 let count = 8;
-console.log(count + 1);
-

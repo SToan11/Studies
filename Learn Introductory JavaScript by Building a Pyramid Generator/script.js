@@ -179,6 +179,19 @@ Arrays are denoted using square brackets ([]). Here is an example of a variable 
 Declare a rows variable and assign it an empty array.
 */
 
+// let character = 'Hello';
+// let count = 8;
+// let rows = [];
+
+/*
+Step 16:
+When an array holds values, or elements, those values are separated by commas. Here is an array that holds two strings:
+        let array = ["first", "second"];
+Change your rows declaration to be an array with the strings "Naomi", "Quincy", and "CamperChan". 
+The order of values in an array is important, so follow that order. Remember that strings are case-sensitive.
+*/
+
 let character = 'Hello';
 let count = 8;
-let rows = [];
+let rows = ["Naomi", "Quincy", "CamperChan"];
+

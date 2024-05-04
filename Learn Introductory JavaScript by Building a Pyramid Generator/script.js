@@ -239,9 +239,19 @@ Update your rows[2] to dynamically access the last element in the rows array. Re
 You should not see anything change in your console.
 */
 
+// let character = 'Hello';
+// let count = 8;
+// let rows = ["Naomi", "Quincy", "CamperChan"];
+// console.log(rows[0]);
+// rows[rows.length - 1] = 10;
+// console.log(rows);
+
+/*
+Step 20:
+For now, remove your first console log and your rows[2] assignment. Leave the second rows log statement for later.
+*/
+
 let character = 'Hello';
 let count = 8;
 let rows = ["Naomi", "Quincy", "CamperChan"];
-console.log(rows[0]);
-rows[rows.length - 1] = 10;
 console.log(rows);

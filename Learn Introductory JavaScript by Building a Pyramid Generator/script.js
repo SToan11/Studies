@@ -264,8 +264,23 @@ Arrays have their own methods, and the first you will explore is the .push() met
 Use .push() to add the string "freeCodeCamp" to the end of your rows array. Add this code before your console.log so you can see the change you made to your array.
 */
 
+// let character = 'Hello';
+// let count = 8;
+// let rows = ["Naomi", "Quincy", "CamperChan"];
+// rows.push("freeCodeCamp");
+// console.log(rows);
+
+/*
+Step 22:
+Another method essential for this project is the .pop() method. It removes the last element from an array and returns that element.
+When a method returns a value, you can think of it as giving the value back to you, making it available for use in other parts of your code.
+Declare a popped variable, and assign it the result of rows.pop(). Then, log your popped variable.
+*/
+
 let character = 'Hello';
 let count = 8;
 let rows = ["Naomi", "Quincy", "CamperChan"];
 rows.push("freeCodeCamp");
+let popped = rows.pop();
+console.log(popped);
 console.log(rows);

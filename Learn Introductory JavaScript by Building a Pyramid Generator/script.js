@@ -291,12 +291,22 @@ You should have seen "freeCodeCamp" printed to the console. This is because .pop
 But what does .push() return? Assign your existing rows.push() to a new pushed variable, and log it.
 */
 
+// let character = 'Hello';
+// let count = 8;
+// let rows = ["Naomi", "Quincy", "CamperChan"];
+// let pushed = rows.push("freeCodeCamp");
+// console.log(pushed);
+// let popped = rows.pop();
+// console.log(popped);
+// console.log(rows);
+
+/*
+Step 24:
+Were you expecting to see 4 in the console? .push() returns the new length of the array, after adding the value you give it.
+It is important to be aware of what values a method returns. Take some time to experiment with .push() and .pop(). 
+When you are ready, remove all of your .push() and .pop() calls, and your console.log statements.
+*/
+
 let character = 'Hello';
 let count = 8;
 let rows = ["Naomi", "Quincy", "CamperChan"];
-let pushed = rows.push("freeCodeCamp");
-console.log(pushed);
-let popped = rows.pop();
-console.log(popped);
-console.log(rows);
-

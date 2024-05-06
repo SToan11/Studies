@@ -317,6 +317,22 @@ Change your rows declaration to be assigned an empty array again.
 Also, change your 'Hello' string to use double quotes again. Generally, it does not matter which of the two you prefer, but you will want to be consistent in that choice throughout your project.
 */
 
-let character = "Hello";
-let count = 8;
-let rows = [];
+// let character = "Hello";
+// let count = 8;
+// let rows = [];
+
+/*
+Step 26:
+The let keyword allows a variable to be reassigned. This means you could change character later to be a completely different value.
+For this project, you will not want to change these variable values. So instead, you should use const to declare them. const variables are special.
+First, a const variable cannot be reassigned like a let variable. This code would throw an error:
+                const firstName = "Naomi";
+                firstName = "Jessica";
+A const variable also cannot be uninitialized. This code would throw an error:
+                const firstName;
+Replace your let keywords with const.
+*/
+
+const character = "Hello";
+const count = 8;
+const rows = [];

@@ -350,7 +350,6 @@ You are now ready to start building your pyramid generator. Your character varia
 /*
 Step 28:
 To generate a pyramid, you will need to create multiple rows. When you have to perform a task repeatedly until a condition is met, you will use a loop. There are many ways to write a loop.
-
 You are going to start with a basic for loop. for loops use the following syntax:
 
                 for (iterator; condition; iteration) {
@@ -360,10 +359,26 @@ In the upcoming steps, you'll explore each component of a loop in detail. For no
 Keep the loop body, the section within the curly braces {}, empty.
 */
 
+// const character = "#";
+// const count = 8;
+// const rows = [];
+// for ("iterator"; "condition"; "iteration") {
+
+// }
+
+/*
+Step 29:
+Your loop now needs a proper iterator. The iterator is a variable you can declare specifically in your for loop to control how the loop iterates or goes through your logic.
+It is a common convention to use i as your iterator variable in a loop. A for loop allows you to declare this in the parentheses (). For example, here is a for loop that declares an index variable and assigns it the value 100.
+                for (let index = 100; "second"; "third") {
+
+                }
+Replace the string "iterator" with a let declaration for the variable i. Assign it the value 0 to start. This will give the i variable the value 0 the first time your loop runs.
+*/
+
 const character = "#";
 const count = 8;
 const rows = [];
-
-for ("iterator"; "condition"; "iteration") {
+for (let i = 0; "condition"; "iteration") {
 
 }

@@ -417,10 +417,25 @@ Step 32:
 Your loop should now run eight times. Inside the body of the loop, print the value of the i iterator and see what happens.
 */
 
+// const character = "#";
+// const count = 8;
+// const rows = [];
+
+// for (let i = 0; i < count; i = i + 1) {
+//   console.log(i);
+// }
+
+/*
+Step 33:
+You should see the numbers zero through seven printed in your console, one per line. This will serve as the foundation for generating your pyramid.
+Replace your log statement with a statement to push i to your rows array.
+*/
+
 const character = "#";
 const count = 8;
 const rows = [];
 
 for (let i = 0; i < count; i = i + 1) {
-  console.log(i);
+  rows.push(i);
 }
+

@@ -445,6 +445,22 @@ Unfortunately, now you cannot see what your loop is doing.
 Use let to declare a result variable, and assign it an empty string. An empty string is represented by quotation marks with nothing between them, such as "".
 */
 
+// const character = "#";
+// const count = 8;
+// const rows = [];
+
+// for (let i = 0; i < count; i = i + 1) {
+//   rows.push(i);
+// }
+
+// let result = ""
+
+
+/*
+Step 35:
+Add a log statement to print the value of result. Depending on which console you use, you may not see anything printed.
+*/
+
 const character = "#";
 const count = 8;
 const rows = [];
@@ -455,3 +471,4 @@ for (let i = 0; i < count; i = i + 1) {
 
 let result = ""
 
+console.log(result);

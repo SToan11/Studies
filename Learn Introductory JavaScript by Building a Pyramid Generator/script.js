@@ -838,7 +838,7 @@ Change your padRow function to return the name parameter directly.
 // console.log(result);
 
 /*
-Step 49
+Step 49:
 If you open your console again, you'll see that your padRow function is returning undefined, even though you defined a return value! This is because parameters need to be given a value when you call the function.
 When you pass a value to a function call, that value is referred to as an argument. Here is an example of calling a demo function and passing "Naomi" as the argument for the name parameter.
 
@@ -849,13 +849,54 @@ demo("Naomi");
 Pass your own name as the argument for the name parameter in your padRow call. Remember that your name is a string, so you'll need to use quotes.
 */
 
+// const character = "#";
+// const count = 8;
+// const rows = [];
+
+// function padRow(name) {
+//   return name;
+// }
+// const call = padRow("CamperChan");
+// console.log(call);
+
+
+// for (let i = 0; i < count; i = i + 1) {
+//   rows.push(character.repeat(i + 1))
+// }
+
+// let result = ""
+
+// for (const row of rows) {
+//   result = result + "\n" + row;
+// }
+
+// console.log(result);
+
+/*
+Step 50:
+Variables in JavaScript are available in a specific scope. In other words, where a variable is declared determines where in your code it can be used.
+
+The first scope is the global scope. Variables that are declared outside of any "block" like a function or for loop are in the global scope. Your character, count, and rows variables are all in the global scope.
+
+When a variable is in the global scope, a function can access it in its definition. Here is an example of a function using a global title variable:
+
+                const title = "Professor ";
+                function demo(name) {
+                return title + name;
+                }
+demo("Naomi")
+This example would return "Professor Naomi". Update your padRow function to return the value of concatenating your character variable to the beginning of the name parameter.
+*/
+
 const character = "#";
 const count = 8;
 const rows = [];
 
 function padRow(name) {
-  return name;
+  return character + name;
+
 }
+
 const call = padRow("CamperChan");
 console.log(call);
 

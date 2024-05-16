@@ -920,14 +920,45 @@ To see this in action, use const to declare a test variable in your padRow funct
 Then, below your function, try to log test to the console. You will see an error because it is not defined outside of the function's local scope. Remove that console.log to pass the tests and continue.
 */
 
+// const character = "#";
+// const count = 8;
+// const rows = [];
+
+// function padRow(name) {
+  
+//   return character + name;
+//   const test = "Testing";
+// }
+
+// const call = padRow("CamperChan");
+// console.log(call);
+
+
+// for (let i = 0; i < count; i = i + 1) {
+//   rows.push(character.repeat(i + 1))
+// }
+
+// let result = ""
+
+// for (const row of rows) {
+//   result = result + "\n" + row;
+// }
+
+// console.log(result);
+
+/*
+Step 52:
+There is a bit of a problem, here. Your test declaration is currently after your return statement. An important thing to know about the return keyword is that it does not just define a value to be returned from your function, it also stops the execution of your function code. This means that any code after a return statement will not run.
+Move your test initialization to the line above your return statement.
+*/
+
 const character = "#";
 const count = 8;
 const rows = [];
 
 function padRow(name) {
-  
-  return character + name;
   const test = "Testing";
+  return character + name;
 }
 
 const call = padRow("CamperChan");

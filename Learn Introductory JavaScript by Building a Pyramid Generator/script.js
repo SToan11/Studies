@@ -1042,24 +1042,29 @@ Because your function was no longer using the parameter, changing the value pass
 Go ahead and remove the test declaration from your padRow function. Also, remove the return statement, so your function is empty again.
 */
 
-const character = "#";
-const count = 8;
-const rows = [];
+// const character = "#";
+// const count = 8;
+// const rows = [];
 
-function padRow() {
+// function padRow() {
 
-}
-const call = padRow();
-console.log(call);
+// }
+// const call = padRow();
+// console.log(call);
 
-for (let i = 0; i < count; i = i + 1) {
-  rows.push(character.repeat(i + 1))
-}
+// for (let i = 0; i < count; i = i + 1) {
+//   rows.push(character.repeat(i + 1))
+// }
 
-let result = ""
+// let result = ""
 
-for (const row of rows) {
-  result = result + "\n" + row;
-}
+// for (const row of rows) {
+//   result = result + "\n" + row;
+// }
 
-console.log(result);
+// console.log(result);
+
+/*
+Step 56:
+As expected, your function now returns undefined again. Your call variable is not necessary any more, so remove the call declaration and the console.log for the call variable.
+*/

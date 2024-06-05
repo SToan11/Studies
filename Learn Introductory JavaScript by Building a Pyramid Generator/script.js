@@ -1337,28 +1337,25 @@ Update the character value to be repeated 2 * rowNumber - 1 times.
 Open up the console again to see the updated result.
 */
 
-// const character = "#";
-// const count = 8;
-// const rows = [];
+const character = "#";
+const count = 8;
+const rows = [];
 
-// function padRow(name) {
-//   const test = "Testing";
-//   return test;
-// }
-// const call = padRow("CamperChan");
-// console.log(call);
+function padRow(rowNumber, rowCount) {
+  return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
 
-// for (let i = 0; i < count; i = i + 1) {
-//   rows.push(character.repeat(i + 1))
-// }
+for (let i = 0; i < count; i = i + 1) {
+  rows.push(padRow(i + 1, count));
+}
 
-// let result = ""
+let result = ""
 
-// for (const row of rows) {
-//   result = result + "\n" + row;
-// }
+for (const row of rows) {
+  result = result + "\n" + row;
+}
 
-// console.log(result);
+console.log(result);
 
 /*
 Step 66:

@@ -1394,22 +1394,28 @@ Because you are only increasing i by 1, you can use the increment operator ++. T
 Replace your addition assignment with the increment operator for your loop iteration.
 */
 
-const character = "#";
-const count = 8;
-const rows = [];
+// const character = "#";
+// const count = 8;
+// const rows = [];
 
-function padRow(rowNumber, rowCount) {
-  return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
-}
+// function padRow(rowNumber, rowCount) {
+//   return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+// }
 
-for (let i = 0; i < count; i++) {
-  rows.push(padRow(i + 1, count));
-}
+// for (let i = 0; i < count; i++) {
+//   rows.push(padRow(i + 1, count));
+// }
 
-let result = ""
+// let result = ""
 
-for (const row of rows) {
-  result = result + "\n" + row;
-}
+// for (const row of rows) {
+//   result = result + "\n" + row;
+// }
 
-console.log(result);
+// console.log(result);
+
+/*
+Step 68:
+Rather than having to pass i + 1 to your padRow call, you could instead start your loop at 1. This would allow you to create a one-indexed loop.
+Update your iterator to start at 1 instead of 0.
+*/

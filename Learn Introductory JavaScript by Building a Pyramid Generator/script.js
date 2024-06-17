@@ -1613,23 +1613,30 @@ In JavaScript, you can use // to leave a single-line comment in your code.
 Add a single-line comment above your function to remind yourself to change the code to a different kind of loop.
 */
 
-const character = "#";
-const count = 8;
-const rows = [];
+// const character = "#";
+// const count = 8;
+// const rows = [];
 
-function padRow(rowNumber, rowCount) {
-  return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
-}
+// function padRow(rowNumber, rowCount) {
+//   return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+// }
 
-// TODO: use a different type of loop
-for (let i = 1; i <= count; i++) {
-  rows.push(padRow(i, count));
-}
+// // TODO: use a different type of loop
+// for (let i = 1; i <= count; i++) {
+//   rows.push(padRow(i, count));
+// }
 
-let result = ""
+// let result = ""
 
-for (const row of rows) {
-  result = result + "\n" + row;
-}
+// for (const row of rows) {
+//   result = result + "\n" + row;
+// }
 
-console.log(result);
+// console.log(result);
+
+/*
+Step 76Passed
+JavaScript also has support for multi-line comments. A multi-line comment starts with /* and ends with *//*
+Unlike a single-line comment, a multi-line comment will encapsulate multiple lines.
+Use /* and */ /*to turn your current for loop, including the body, into a multi-line comment.
+*/

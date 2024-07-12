@@ -2388,30 +2388,36 @@ You'll need to change the while condition to use the less than operator, instead
 */
 
 
-const character = "#";
-const count = 8;
-const rows = [];
+// const character = "#";
+// const count = 8;
+// const rows = [];
 
-function padRow(rowNumber, rowCount) {
-  return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
-}
+// function padRow(rowNumber, rowCount) {
+//   return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+// }
 
-// TODO: use a different type of loop
-/*for (let i = 1; i <= count; i++) {
-  rows.push(padRow(i, count));
-}*/
+// // TODO: use a different type of loop
+// /*for (let i = 1; i <= count; i++) {
+//   rows.push(padRow(i, count));
+// }*/
 
-let done = 0;
+// let done = 0;
 
-while (rows.length < count) {
-  done++;
-  rows.push(padRow(rows.length + 1, count));
-}
+// while (rows.length < count) {
+//   done++;
+//   rows.push(padRow(rows.length + 1, count));
+// }
 
-let result = ""
+// let result = ""
 
-for (const row of rows) {
-  result = result + "\n" + row;
-}
+// for (const row of rows) {
+//   result = result + "\n" + row;
+// }
 
-console.log(result);
+// console.log(result);
+
+
+/*
+Step 97:
+Now you no longer need your done variable. Remove the increment operation from your loop, and the variable declaration for done.
+*/

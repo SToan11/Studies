@@ -2747,35 +2747,48 @@ You can actually build the inverted pyramid without needing to loop "backwards" 
 To do this, you'll need to learn a couple of new array methods. Start by using const to declare a numbers variable. Assign it an array with the elements 1, 2, and 3. Then log the numbers array.
 */
 
-const character = "#";
-const count = 8;
-const rows = [];
+// const character = "#";
+// const count = 8;
+// const rows = [];
 
-function padRow(rowNumber, rowCount) {
-  return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
-}
+// function padRow(rowNumber, rowCount) {
+//   return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+// }
 
-// TODO: use a different type of loop
-/*for (let i = 1; i <= count; i++) {
-  rows.push(padRow(i, count));
-}*/
+// // TODO: use a different type of loop
+// /*for (let i = 1; i <= count; i++) {
+//   rows.push(padRow(i, count));
+// }*/
 
-/*while (rows.length < count) {
-  rows.push(padRow(rows.length + 1, count));
-}*/
+// /*while (rows.length < count) {
+//   rows.push(padRow(rows.length + 1, count));
+// }*/
 
-/*for (let i = count; i > 0; i--) {
-  rows.push(padRow(i, count));
-}*/
+// /*for (let i = count; i > 0; i--) {
+//   rows.push(padRow(i, count));
+// }*/
 
-const numbers = [1, 2, 3];
+// const numbers = [1, 2, 3];
 
-console.log(numbers);
+// console.log(numbers);
 
-let result = ""
+// let result = ""
 
-for (const row of rows) {
-  result = result + "\n" + row;
-}
+// for (const row of rows) {
+//   result = result + "\n" + row;
+// }
 
-console.log(result);
+// console.log(result);
+
+/*
+Step 107:
+The .unshift() method of an array allows you to add a value to the beginning of the array, unlike .push() which adds the value at the end of the array. .unshift() returns the new length of the array it was called on.
+Example Code
+                const countDown = [2, 1, 0];
+                const newLength = countDown.unshift(3);
+                console.log(countDown); // [3, 2, 1, 0]
+                console.log(newLength); // 4
+Use const to declare an unshifted variable, and assign it the result of calling .unshift() on your numbers array. Pass 5 as the argument. Then print your unshifted variable.
+*/
+
+

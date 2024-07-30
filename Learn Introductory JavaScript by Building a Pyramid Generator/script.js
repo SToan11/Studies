@@ -2828,6 +2828,9 @@ Use const to declare an unshifted variable, and assign it the result of calling 
 
 // console.log(result);
 
+
+
+
 /*
 Step 108:
 Arrays also have a .shift() method. This will remove the first element of the array, unlike .pop() which removes the last element. Here is an example of the .shift() method:
@@ -2840,38 +2843,46 @@ Directly below your numbers array, declare a shifted variable and assign it the 
 
 
 
-const character = "#";
-const count = 8;
-const rows = [];
+// const character = "#";
+// const count = 8;
+// const rows = [];
 
-function padRow(rowNumber, rowCount) {
-  return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
-}
+// function padRow(rowNumber, rowCount) {
+//   return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+// }
 
-// TODO: use a different type of loop
-/*for (let i = 1; i <= count; i++) {
-  rows.push(padRow(i, count));
-}*/
+// // TODO: use a different type of loop
+// /*for (let i = 1; i <= count; i++) {
+//   rows.push(padRow(i, count));
+// }*/
 
-/*while (rows.length < count) {
-  rows.push(padRow(rows.length + 1, count));
-}*/
+// /*while (rows.length < count) {
+//   rows.push(padRow(rows.length + 1, count));
+// }*/
 
-/*for (let i = count; i > 0; i--) {
-  rows.push(padRow(i, count));
-}*/
+// /*for (let i = count; i > 0; i--) {
+//   rows.push(padRow(i, count));
+// }*/
 
-const numbers = [1, 2, 3];
-const shifted = numbers.shift();
-console.log(shifted);
-const unshifted = numbers.unshift(5);
-console.log(unshifted);
-console.log(numbers);
+// const numbers = [1, 2, 3];
+// const shifted = numbers.shift();
+// console.log(shifted);
+// const unshifted = numbers.unshift(5);
+// console.log(unshifted);
+// console.log(numbers);
 
-let result = ""
+// let result = ""
 
-for (const row of rows) {
-  result = result + "\n" + row;
-}
+// for (const row of rows) {
+//   result = result + "\n" + row;
+// }
 
-console.log(result);
+// console.log(result);
+
+
+
+/*
+Step 109:
+Now that you've tried these methods, you can do another inverted pyramid approach. But first you need to clean up your experimentation.
+Remove your numbers array, and the method calls and log calls.
+*/
